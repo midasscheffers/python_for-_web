@@ -1,0 +1,143 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 110%;
+}
+
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color: #fff;
+}
+
+.wrapper{
+  width: 100%;
+  margin: auto;
+}
+
+header{
+  text-align: center;
+  background-color: #FF8a0C;
+  color: #fff;
+  border-style: solid;
+  border-color: #744;
+  border-width: 1px;
+}
+
+header h1 {
+  font-size: 150%;
+}
+
+.middel{
+  display: table;
+  width: 100%;
+  clear: left;
+  float: left;
+}
+
+nav{
+  display: table-cell;
+  width: 15%;
+  height: 100%;
+  background-color: #FF8a0C;
+  color: #fff;
+  border-style: solid;
+  border-color: #744;
+  border-width: 1px;
+}
+
+nav h2 {
+  font-size: 90%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li a:link{
+  list-style-type: none;
+  color: #ff892a;
+  text-decoration: none;
+}
+
+nav li a:hover{
+  list-style-type: none;
+  color: #ffbd4c;
+  text-decoration: none;
+}
+
+nav li a:active{
+  list-style-type: none;
+  color: #ff892a;
+  text-decoration: none;
+}
+
+nav li a:visited{
+  list-style-type: none;
+  color: #ff892a;
+  text-decoration: none;
+}
+
+section{
+  display: table-cell;
+  margin: 40px;
+  padding: 10px;
+  width: 75%;
+  height: 100%;
+  color: #999999;
+}
+
+.loginButton{
+  background-color: #999;
+  color: #000;
+  padding: 2px;
+  font-size: 50%;
+  border-radius: 5px;
+  float: right;
+  border-color: #000;
+  text-decoration: none;
+}
+
+.loginButton a{
+  text-decoration: none;
+  color: #000;
+}
+
+
+section form{
+  font-size: 50%;
+}
+
+section form {
+  display: table;
+}
+
+section form div {
+  display: table-row;
+}
+
+section form label, input {
+  display: table-cell;
+}
+
+section form input{
+  border-radius: 5px;
+  width: 250px;
+}
+
+section form input.checker{
+  border-radius: auto;
+  width: auto;
+}
+
+section form textarea{
+   resize: none;
+   width: 300px;
+   height: 150px;
+   border-radius: 5px;
+}
+
+.home_form input.counter{
+  width: 50px;
+}

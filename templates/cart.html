@@ -1,0 +1,40 @@
+{% extends "base.html"%}
+{% block middel %}
+<div class="wrapper">
+        <header>
+          <h1>Webshop</h1>
+          <p>cart</p>
+        </header>
+        <div class="middel">
+          <nav>
+            <ul>
+              <li><h2>Cart</h2></li>
+            </ul>
+          </nav>
+          <section>
+            <h1>sign in here</h1>
+            <br>
+            <form action="" method="post" form="cartForm">
+              {{ form.hidden_tag() }}
+              <article>
+                <p>sacked beans</p>
+                <input type="number" step="1" value={{item_count[0]}} class="counter" name="numberOfSackedBeans">
+              </article>
+              <br>
+              <article>
+                <p>canned beans</p>
+                <input type="number" step="1" value={{item_count[1]}} class="counter" name="numberOfCannedBeans">
+              </article>
+              <br>
+              <p>
+                price: € {{ total }}, Inc BTW
+              </p>
+              <br>
+              
+              <input type="submit" name="order" value="Order">
+              <input type="submit" name="recalcprize" value="Recalculate prises">
+            </form>
+          </section>
+        </div>
+      </div>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "base.html"%}
+
+{% block middel %}
+  <div class="wrapper">
+    <header>
+      <h1>Webshop</h1>
+      <p>login</p>
+    </header>
+    <div class="middel">
+      <nav>
+        <ul>
+          <li><h2>login</h2></li>
+        </ul>
+      </nav>
+      <section>
+        <h1>sign in here</h1>
+        <br>
+        <form action="" method="post">
+          {{ form.hidden_tag() }}
+          <div>
+            {{ form.username.label }}<br>
+            {{ form.username(size=32) }}
+            {% for error in form.username.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+          </div>
+          <br>
+          <div>
+            {{ form.password.label }}<br>
+            {{ form.password(size=32) }}
+            {% for error in form.password.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+          </div>
+          <br>
+          <br>
+          <div>
+            <p>{{ form.remember_me.label }}<br>
+               {{ form.remember_me() }}
+            </p>
+            <br>
+            <p>{{ form.submit() }}</p>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+{% endblock %}

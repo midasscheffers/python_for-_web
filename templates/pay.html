@@ -1,0 +1,23 @@
+{% extends "base.html"%}
+{% block middel %}
+<div class="wrapper">
+        <header>
+          <h1>Webshop</h1>
+          <p>cart</p>
+        </header>
+        <div class="middel">
+          <nav>
+            <ul>
+              <li><h2>Cart</h2></li>
+            </ul>
+          </nav>
+          <section>
+            <h1>Pay € {{ total }}</h1>
+            <br>
+            <form action="" method="POST">
+                <input type="submit" name="back" value="Back to site">
+            </form>
+          </section>
+        </div>
+      </div>
+{% endblock %}

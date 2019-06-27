@@ -1,0 +1,44 @@
+{% extends "base.html"%}
+
+{% block middel %}
+  <div class="wrapper">
+    <header>
+      <h1>Webshop</h1>
+      <p>home</p>
+    </header>
+    <div class="middel">
+      <nav>
+        <ul>
+          <li><h1>Shop</h1></li>
+        </ul>
+      </nav>
+      <section>
+        <h1>
+          hoi
+          <span class="loginButton"><a href="/login">sign in</a></span>
+        </h1>
+        <p>
+          we sell black beans
+          we are the only store that sells exclusively black beans, this means tht we have the best quality black beans as we only focus on them
+        </p>
+        <form action="" method="post" class="home_form">
+          {{ form.hidden_tag() }}
+          <article>
+            <img src="../static/download.jpg" alt="black_beans_in_sack" width="200" height="200">
+            <input type="number" step="1" value="0" class="counter" name="numberOfSackedBeans">
+            <p>Price: € {{item_prises[0]}}, exl BTW</p>
+          </article>
+          <br>
+          <article>
+            <img src="../static/download.jfif" alt="canned_beans" width="200" height="200">
+            <input type="number" step="1" value="0" class="counter" name="numberOfCannedBeans">
+            <p>Price: € {{item_prises[1]}}, exl BTW</p>
+          </article>
+          <br>
+          <p>{{ form.submit() }}</p>
+        </form>
+        
+      </section>
+    </div>
+  </div>
+{% endblock %}
